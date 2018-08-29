@@ -8,7 +8,7 @@ org 0000h
 	movx a,@dptr        ;move second operand into a
 	mul ab              ;perform multiplication: a=lsb and b=msb
 	inc dptr            ;dptr incremented to location of lsb of result
-        movx @dptr,a        ;lsb in a stored at this location
+       movx @dptr,a        ;lsb in a stored at this location
 	inc dptr            ;dptr incremented to location of msb of result
 	mov a,b             ;msb moved to a since dptr related instructions are valid only with the accumulator
 	movx @dptr,a        ;msb in a stored at this location
