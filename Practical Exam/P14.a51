@@ -13,7 +13,7 @@ org 0000h
 	     sjmp finish          ;terminate program
        delay:setb tr0            ;start timer 0
         wait:jnb tf0,wait        ;wait till T0 overflows
-	     clr tr0             ;clear flags which were
+	     clr tr0              ;clear flags which were
 	     clr tf0              ;modified in the process
 	     ret                  ;return to main program
 finish:
