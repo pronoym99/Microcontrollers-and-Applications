@@ -1,6 +1,6 @@
 org 0000h
 	;assume buzzer to be connected to P1.0
-    mov tmod,#01h            ;T0 Mode 1
+        mov tmod,#01h        ;T0 Mode 1
 	mov th0,#0fbh         ;settings for 10ms delay     
 	mov tl0,#0b4h
 	clr p1.0              ;clear pin initially
