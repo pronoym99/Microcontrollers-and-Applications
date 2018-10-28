@@ -11,7 +11,7 @@ org 0000h
 	     acall delay          ;for 100ms delay
 	     djnz r1,back         ;repeat until last pattern
 	     sjmp finish          ;terminate program
-       delay:setb tr0             ;start timer 0
+       delay:setb tr0            ;start timer 0
         wait:jnb tf0,wait        ;wait till T0 overflows
 	     clr tr0             ;clear flags which were
 	     clr tf0              ;modified in the process
