@@ -3,5 +3,5 @@ JB P1.0, L1;    If LSB OF P1 HIGH THEN JMP TO L1
 CLR P2.0;       ELSE CLEAR LSB OF P2
 SJMP L2;        
 L1: SETB P2.0;  SET LSB OF P2
-L2: NOP;        
+L2:   
 END
