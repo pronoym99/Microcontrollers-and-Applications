@@ -6,5 +6,5 @@ org 0000h
 	no_carry:add a,32h    ;add the next number
 	         jnc finish   ;if no carry is generated then finish operation
 		 inc 33h      ;else increment your msb
-finish:mov 34h,a              ;store msb in 34h as presribed in problem
+finish:mov 34h,a             ;store msb in 34h as presribed in problem
 end
