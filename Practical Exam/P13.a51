@@ -1,4 +1,5 @@
 org 0000h
+        ;Assume clock frequency = 12MHz
 	mov tmod,#1h                      ;T0 mode 1
 	repeat:	setb p1.0                 ;set pin
 	        acall delay1              ;call small delay routine                         
