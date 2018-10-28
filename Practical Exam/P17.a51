@@ -9,8 +9,8 @@ org 0000h
 decrement:jnb p2.1,check
           clr p2.0
           dec p1
-	  acall delay
-	  sjmp check
+	   acall delay
+	   sjmp check
 		  
     delay:mov r1,#0ffh
 	   h1:mov r2,#0ffh
