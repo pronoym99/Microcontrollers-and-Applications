@@ -29,7 +29,7 @@
   COMMAND: ACALL READY
   	   MOV P1,A
 	   CLR P2.0		; Instruction
-           CLR P2.1		; Write mode
+          CLR P2.1		; Write mode
 	   SETB P2.2	
 	   CLR P2.2		; High to low pulse to enable pin
 	   RET
@@ -57,7 +57,7 @@
   MOV R3,#50
   HERE2:MOV R4,#255
   HERE1:DJNZ R4,HERE1
-  	DJNZ R3,HERE2
+       DJNZ R3,HERE2
   RET
 
 
