@@ -6,11 +6,11 @@ org 0000h
 	        clr p1.0                  ;clear pin
 	        acall delay2              ;call large delay routine
 	        sjmp repeat               ;repeat indefinitely
-	 delay1:mov th0,#0fbh             ;delay routine for 10ms
-	        mov tl0,#0b4h
+	 delay1:mov th0,#0d8h             ;delay routine for 10ms
+	        mov tl0,#0f0h
 		sjmp sequence             ;jump to timer stop sequence
-	 delay2:mov th0,#0ech             ;delay routine for 50ms
-	        mov tl0,#78h
+	 delay2:mov th0,#3ch             ;delay routine for 50ms
+	        mov tl0,#0b0h
        sequence:setb tr0                  ;start timer 0
 	   wait:jnb tf0,wait              ;wait till T0 stops counting
 		clr tr0                   ;clear flags which were
