@@ -3,5 +3,5 @@ This repository contains all relevant 8051 based assembly level programs execute
 
 Important Notes:
 ----------------
-* This repository solutions to all problems as prescribed in the [Practical Exam](https://github.com/pronoym99/Microcontrollers-and-Applications/blob/master/Practical%20Exam/Practical%20Exam.pdf) document
+* This repository contains solutions to all problems as prescribed in the [Practical Exam](https://github.com/pronoym99/Microcontrollers-and-Applications/blob/master/Practical%20Exam/Practical%20Exam.pdf) document
 
